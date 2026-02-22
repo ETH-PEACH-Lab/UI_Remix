@@ -1,0 +1,98 @@
+.preview-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+
+.main-content {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(248, 249, 250);
+}
+
+.top-padding {
+    padding-top: 0px;
+}
+
+
+.preview-view-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.2s ease;
+    box-sizing: border-box !important;
+}
+
+
+.preview-view-container.visible {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+
+
+.preview-view-container.hidden {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 0;
+    pointer-events: none; 
+}
+  
+.preview-iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border: none !important;
+    background-color: white !important;
+    display: block !important;
+    position: relative !important;
+    z-index: 1 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    pointer-events: auto;
+}
+
+.preview-iframe.dragging {
+    pointer-events: none;
+}
+
+.hide-panel {
+    display: none;
+}
+
+
+.frame-view, .code-view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.frame-view.visible {
+    display: block;
+}
+
+.frame-view.hidden {
+    display: none;
+}
+
+.code-view.visible {
+    display: block;
+}
+
+.code-view.hidden {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+  .top-padding {
+    padding-top: 30px;
+  }
+}

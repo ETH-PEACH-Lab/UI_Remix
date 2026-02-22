@@ -1,0 +1,142 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.login-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo-image {
+  height: 60px;
+  width: auto;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 10px !important;
+  color: #1a1a1a;
+}
+
+.login-hint {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 12px;
+  background: #f0f8ff;
+  border-radius: 8px;
+  border-left: 4px solid #1890ff;
+}
+
+.login-hint strong {
+  color: #1890ff;
+}
+
+.login-form {
+  margin-top: 20px;
+}
+
+.login-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 8px;
+  height: 48px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.login-button:hover {
+  background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+}
+
+.forgot-password {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.forgot-password a {
+  color: #10a37f;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.social-login-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.social-button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e5e5e5;
+  background-color: white !important;
+  color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.social-button:hover {
+  background-color: #f9f9f9 !important;
+  border-color: #d9d9d9 !important;
+}
+
+.signup-prompt {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.signup-prompt a {
+  color: #10a37f;
+  margin-left: 5px;
+}
+
+.signup-prompt a:hover {
+  text-decoration: underline;
+}
+
+/* Ant Design overrides */
+.ant-input-affix-wrapper {
+  padding: 8px 11px;
+}
+
+.ant-form-item {
+  margin-bottom: 20px;
+}
+
+.ant-divider {
+  margin: 24px 0;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.ant-form-item-label > label {
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.ant-input, .ant-input-password {
+  border-radius: 8px;
+  border: 2px solid #e2e8f0;
+  transition: border-color 0.3s ease;
+}
+
+.ant-input:focus, .ant-input-password:focus, .ant-input-focused, .ant-input-password-focused {
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.1);
+} 

@@ -1,0 +1,133 @@
+/* Wrapper styles */
+.message-wrapper {
+  margin-bottom: 16px;
+}
+
+.user-message-wrapper {
+  text-align: right;
+}
+
+.bot-message-wrapper {
+  text-align: left;
+}
+
+/* Message styles */
+.message {
+  padding: 12px;
+  border-radius: 8px;
+  max-width: 80%;
+  display: inline-block;
+}
+
+/* Style for inline mode and content */
+.message-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px; /* Add spacing between mode and text */
+  word-break: break-word; /* break long words if needed */
+}
+
+.mode-selector-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mode-buttons-left {
+  display: flex;
+  gap: 8px; /* space between the first three buttons */
+}
+
+.mode-button-right {
+  display: flex;
+  align-items: center;
+}
+
+
+/* Style for the mode label */
+.message-mode {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px; /* Add spacing between mode label and message content */
+  font-size: 12px;
+  font-weight: bold;
+  color: #808080; /* Gray color for the text */
+}
+
+.message-mode-inline {
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold; /* Make the text bold */
+  color: #808080; /* Gray color for the text */
+}
+
+.message-mode-inline-icon {
+  margin-right: 4px; /* Add spacing between the icon and the text */
+}
+
+/* Message color styles */
+.user-message {
+  background-color: #e6f7ff;
+  color: #000;
+}
+
+.bot-message {
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+/* Message border style */
+.message-generate {
+  border: 2px solid #1890ff;
+}
+
+.message-generate {
+  border: 0px;
+}
+
+/* ExampleChip specific styles */
+.example-chip {
+  border-color: #1890ff;
+  background-color: #e6f7ff;
+}
+
+.example-chip-title {
+  display: flex;
+  align-items: center;
+  color: #1890ff;
+}
+
+/* TagChip specific styles */
+.tag-chip {
+  border-color: #971ac4ff;
+  background-color: #f6d9fdff;
+}
+
+.tag-chip-title {
+  display: flex;
+  align-items: center;
+  color: #971ac4ff;
+}
+
+/* Web image style */
+.web-image {
+  max-width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Inline chips */
+.message-inline-chips {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+/* Plain text content styles */
+.plain-text-content {
+  white-space: pre-wrap; /* Preserve whitespace and line breaks */
+  word-wrap: break-word; /* Break long words */
+  line-height: 1.5; /* Improve readability */
+}

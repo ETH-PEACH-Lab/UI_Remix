@@ -1,0 +1,17 @@
+torch
+torchvision
+torchaudio
+numpy==1.26.4
+transformers
+chromadb
+jupyter
+fastapi[all]
+beautifulsoup4
+openai
+tiktoken
+pdfplumber
+playwright
+anthropic
+gunicorn
+pandas
+lxml

@@ -1,0 +1,199 @@
+/* iPhone 15 Frame Styles */
+.iphone15-frame {
+  position: relative;
+  width: calc(100vh * 0.43);
+  height: calc(100vh - 20px); /* Reduce height to fit viewport */
+  max-height: 85vh; /* Prevent overflow */
+  border-radius: 40px;
+  background: linear-gradient(135deg, #f8f8f8 0%, #eaeaea 100%);
+  box-shadow: 0 0 30px rgba(0,0,0,0.25), 0 2px 8px rgba(0,0,0,0.08);
+  margin: 20px auto; /* Reduce margin */
+  overflow: hidden;
+  border: 2px solid #e0e0e0;
+}
+
+.iphone15-frame--black {
+  background: linear-gradient(135deg, #222 0%, #444 100%);
+  border: 2px solid #333;
+}
+
+.iphone15-screen-border {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 36px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 2px rgba(0,0,0,0.05);
+}
+
+.iphone15-status-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  background: rgba(0,0,0,0.08);
+  color: #222;
+  font-size: 15px;
+  z-index: 2;
+}
+
+.iphone15-time {
+  font-weight: 600;
+}
+
+.iphone15-status-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.iphone15-signal {
+  display: flex;
+  gap: 2px;
+}
+.iphone15-signal-bar {
+  width: 3px;
+  height: 12px;
+  background: #222;
+  border-radius: 2px;
+  opacity: 0.5;
+}
+.iphone15-signal-bar:first-child { height: 6px; opacity: 0.3; }
+.iphone15-signal-bar:nth-child(2) { height: 8px; opacity: 0.4; }
+.iphone15-signal-bar:nth-child(3) { height: 10px; opacity: 0.6; }
+.iphone15-signal-bar:last-child { height: 12px; opacity: 0.8; }
+
+.iphone15-battery {
+  position: relative;
+  width: 28px;
+  height: 14px;
+  border: 1.5px solid #222;
+  border-radius: 3px;
+  background: #fff;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+}
+.iphone15-battery-level {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 70%;
+  background: #4ade80;
+  border-radius: 2px;
+}
+
+/* Dynamic Island (camera placeholder) */
+.iphone15-dynamic-island {
+  position: absolute;
+  left: 50%;
+  top: 8px;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 18px;
+  background: #222;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.18);
+  z-index: 3;
+  display: block;
+}
+
+/* Screen content area */
+.android-screen-content {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  right: 0;
+  bottom: 48px;
+  width: 100%;
+  height: calc(100% - 80px);
+  background: #fff;
+  overflow-y: auto;
+  z-index: 1;
+  border-radius: 0 0 36px 36px;
+}
+
+/* iPhone 15 screen content area */
+.iphone15-screen-content {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  width: 100%;
+  height: calc(100% - 32px);
+  background: #fff;
+  overflow-y: auto;
+  z-index: 1;
+  border-radius: 0 0 36px 36px;
+}
+
+/* Navigation bar (simulate iPhone home bar) */
+.android-navigation-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: transparent;
+  z-index: 2;
+}
+.android-nav-button--home {
+  width: 60px;
+  height: 6px;
+  border-radius: 3px;
+  background: #222;
+  margin-bottom: 12px;
+  opacity: 0.7;
+}
+/* Hide back/recent for iPhone style */
+.android-nav-button--back,
+.android-nav-button--recent {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .iphone15-frame {
+    width: calc(100vh * 0.46);
+    height: calc(100vh - 20px);
+    max-height: 60vh;
+    border-radius: 24px;
+    margin: 10px auto;
+  }
+  .iphone15-screen-border {
+    border-radius: 20px;
+  }
+  .android-screen-content {
+    top: 24px;
+    bottom: 32px;
+    border-radius: 0 0 20px 20px;
+  }
+  .iphone15-screen-content {
+    top: 24px;
+    bottom: 32px;
+    border-radius: 0 0 20px 20px;
+  }
+  .iphone15-status-bar {
+    height: 24px;
+    font-size: 12px;
+    padding: 0 12px;
+  }
+  .android-navigation-bar {
+    height: 32px;
+  }
+  .android-nav-button--home {
+    width: 40px;
+    height: 5px;
+    margin-bottom: 8px;
+  }
+}
