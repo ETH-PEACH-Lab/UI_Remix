@@ -34,7 +34,7 @@ tokenizer = CLIPTokenizer.from_pretrained(
     clip_model_name, 
 )
 
-# creeate chroma client
+# create chroma client
 chroma_client = chromadb.PersistentClient(path="./chroma_db")
 
 # build embedding

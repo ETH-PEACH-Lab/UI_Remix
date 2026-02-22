@@ -1,6 +1,5 @@
 # IDE
 .vscode/
-.cursorignore
 
 # Front
 front/node_modules/*
@@ -11,7 +10,6 @@ front/package-lock.json
 
 # Server
 server/data/*
-server/.cursorignore
 server/chroma_db/*
 server/server.log
 server/embeddings/*
