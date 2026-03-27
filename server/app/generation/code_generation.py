@@ -275,8 +275,6 @@ async def get_data_from_from(
         drawing_file = form["drawingImage"]
         if drawing_file and hasattr(drawing_file, 'read'):
             drawing_content = await drawing_file.read()
-            with open("temp.png", "wb") as f:
-                f.write(drawing_content)
             
             try:
                 screenshot = Image.open(io.BytesIO(drawing_content))

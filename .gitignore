@@ -1,11 +1,17 @@
 # IDE
 .vscode/
 
+# Docker
+docker-compose.prod.yml
+docker-compose.yml
+Dockerfile
+
 # Front
 front/node_modules/*
 front/data/*
 front/dist/*
 front/icons/*
+front/metadata.json
 front/package-lock.json
 
 # Server
@@ -13,12 +19,16 @@ server/data/*
 server/chroma_db/*
 server/server.log
 server/embeddings/*
+server/metadata.json
 server/files/*
 
 # Python cache
 __pycache__/
 **/__pycache__/
 *.py[cod]
+
+# Environment
+.env
 
 # macOS
 .DS_Store

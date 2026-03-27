@@ -13,7 +13,7 @@ export function injectHighlighter(htmlContent: string): string {
     </style>
     `;
   
-    const scriptUrl = '/src/tag.js';
+    const scriptUrl = '/tag.js';
     const highlightScript = `<script src="${scriptUrl}"></script>`;
   
     if (htmlContent.includes('specified_compo')) {

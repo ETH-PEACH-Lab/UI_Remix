@@ -28,7 +28,8 @@ clip_model = CLIPModel.from_pretrained(
     clip_model_name, 
 ).to(device)
 processor = CLIPProcessor.from_pretrained(
-    clip_model_name, 
+    clip_model_name,
+    use_fast=False,
 )
 tokenizer = CLIPTokenizer.from_pretrained(
     clip_model_name, 
@@ -42,10 +43,14 @@ webs = os.listdir("data")
 
 def get_clip_image_embedding(image_path):
     image = Image.open(image_path)
-    image = processor(images=image, return_tensors="pt", padding=True).to(device)
-    image_embeddings = clip_model.get_image_features(**image)
+    inputs = processor(images=image, return_tensors="pt", padding=True).to(device)
+    with torch.no_grad():
+        image_embeddings = clip_model.get_image_features(**inputs)
+    if not isinstance(image_embeddings, torch.Tensor):
+        image_embeddings = image_embeddings.pooler_output
     return image_embeddings
 
+# if "img_embeddings" in chroma_client.list_collections():
 chroma_client.delete_collection("img_embeddings")
 img_collection = chroma_client.create_collection("img_embeddings", metadata={"hnsw:space": "cosine"})
 

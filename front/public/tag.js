@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (action === "highlight") {
       if (!isElementSelected) {
         const tag = document.getElementById(tagId);
-        if (tag) {
+        if (tag && tag.classList.contains("specified_compo")) {
           document.querySelectorAll(".highlighted").forEach((el) => {
             el.classList.remove("highlighted");
           });
@@ -137,6 +137,14 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     } else if (action === "clearSelection") {
       isElementSelected = false;
+      document.querySelectorAll(".highlighted").forEach((el) => {
+        el.classList.remove("highlighted");
+      });
+    }
+    else if (action === "clean") {
+      document.querySelectorAll(".specified_compo").forEach((el) => {
+        el.classList.remove("specified_compo");
+      });
       document.querySelectorAll(".highlighted").forEach((el) => {
         el.classList.remove("highlighted");
       });
