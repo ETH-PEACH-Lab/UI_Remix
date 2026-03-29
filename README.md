@@ -24,7 +24,7 @@ Designing user interfaces (UIs) is a critical step when launching products, buil
 | LLM       | OpenAI API (GPT-5, GPT-4o, GPT-4.1, o3, o4-mini, etc.), Anthropic API (Claude Sonnet 4, Claude 3.7/3.5 Sonnet)    |
 | Retrieval | ChromaDB (persistent vector store), GUI-CLIP (`Jl-wei/guiclip-vit-base-patch32`), PyTorch                         |
 
-<img src="rag_pipeline.png" width="80%">
+<img src="rag_pipeline.png" width="100%">
 
 
 # Getting Started
