@@ -6,7 +6,7 @@ Supporting UI Design Through Interactive Example Retrieval and Remixing, IUI 202
 
 📄 **[IUI 2026 Paper — UI Remix](https://doi.org/10.1145/3742413.3789154)**  
 
-🎥 **[IUI 2026 Video](https://youtu.be/Yl4PJWlXizE)**  
+🎥 **[IUI 2026 Video](https://youtu.be/qU-e717D6Hw)**  
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
